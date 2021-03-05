@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_package/my_package.dart';
+import 'package:my_plugin/my_plugin.dart';
 
 void main() {
   runApp(MyApp());
@@ -52,6 +53,15 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  String _platformVersion = '';
+
+  @override
+  void initState() {
+    MyPlugin.platformVersion.then(
+      (value) => setState(() => _platformVersion = value),
+    );
+    super.initState();
+  }
 
   void _incrementCounter() {
     setState(() {
@@ -98,6 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(_platformVersion),
             Text(
               'You have pushed the button this many times:',
             ),
