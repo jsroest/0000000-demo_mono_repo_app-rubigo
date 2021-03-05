@@ -25,6 +25,8 @@ dependencies:
     sdk: flutter
   my_package:
     path: ../my_package
+  my_plugin:
+    path: ../my_plugin
 
 
   # The following adds the Cupertino Icons font to your application.
