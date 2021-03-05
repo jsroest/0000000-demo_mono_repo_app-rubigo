@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/demo_mono_repo_app.iml" filepath="$PROJECT_DIR$/demo_mono_repo_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/../my_package/my_package.iml" filepath="$PROJECT_DIR$/../my_package/my_package.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../my_plugin/my_plugin.iml" filepath="$PROJECT_DIR$/../my_plugin/my_plugin.iml" />
     </modules>
   </component>
 </project>
